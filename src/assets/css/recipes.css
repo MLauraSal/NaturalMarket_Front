@@ -1,0 +1,232 @@
+/* recipes.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #eee;
+}
+
+
+
+/*-----------------------------------*\
+  #SECTION HOME
+\*-----------------------------------*/
+
+.home-recipes {
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 650px;
+  align-items: center;
+  background: url(../img/pexels-kampus-7964669.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home-recipes .recipe-content {
+  text-align: center;
+  width: 80%;
+}
+
+.recipe-content h3 {
+  color: var(--bg-color);
+  font-size: 4rem;
+}
+
+.recipe-content p {
+  color: var(--bg-color);
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+
+.recipe-search {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#query {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  width: 60%;
+  height: 4rem;
+  max-width: 400px;
+}
+
+button {
+  padding: 0.8rem 3rem;
+  font-size: 1.6rem;
+  background-color: var(--green-color);
+  color: var(--bg-color);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 500px;
+}
+
+.recipes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 5rem;
+}
+
+.recipe-card {
+  background-color: var(--bg-color);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  padding: 10px;
+  
+}
+
+.recipe-card h3 {
+  padding: 1rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Estilos para el modal */
+.recipe-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 5rem;
+}
+
+.recipe-modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  font-size: 2rem;
+}
+
+.recipe-modal-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.recipe-modal-close:hover,
+.recipe-modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.recipe-modal-content img {
+  width: 100%;
+  height: auto; 
+  border-radius: 15px;
+}
+
+@media (max-width: 991px) {
+  html {
+      font-size: 55%;
+  }
+
+  .header {
+
+      padding: 2rem;
+  }
+
+  section {
+      padding: 2rem 9%;
+  }
+  
+  .recipe-modal-content img {
+    width: 100%;
+    height: auto; 
+  }
+
+
+}
+
+@media (max-width: 768px) {
+
+  #menu-btn {
+      display: inline-block;
+  }
+  .header .navbar {
+      position: absolute;
+      top: 110%;
+      right: -110%;
+      width: 30rem;
+      box-shadow: var(--box-shadow);
+      border-radius: .5rem;
+      background: var(--bg-color);
+  }
+
+  .header .navbar a {
+      display: block;
+      font-size: 2rem;
+      margin: 2rem 2.5rem;
+  }
+
+  .header .search-form {
+      width: 90%;
+  }
+  
+  .recipe-modal {
+    margin-top: 5rem;
+  }
+
+
+  .recipe-modal-content img {
+    width: 100%; 
+    height: auto; 
+  }
+
+}
+
+@media (max-width: 450px) {
+  html {
+      font-size: 50%;
+  }
+  
+  .heading {
+      font-size: 2.5rem;
+  }
+
+  
+ 
+
+  
+  .footer-box {
+      text-align: center;
+  }
+  .footer-box a {
+      text-align: left;
+  }
+
+  
+  .social  {
+      
+      justify-content: center;
+      
+  } 
+ 
+}
