@@ -1,6 +1,6 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Poppins&weight=500&size=40&pause=1000&color=2ECF27&random=false&width=600&height=80&lines=Natural+Market;Grupo+15-TPO)](https://git.io/typing-svg)
 
-![alt text](<src\Captura de pantalla (1).png>)
+![alt text](<Captura de pantalla (1).png>)
 ## Introduccion:
 
 El proyecto que presentamos se centra en la creación de una plataforma de e-commerce dedicada a la venta de productos naturales aptos para personas con dietas celíacas y veganas. 
